@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_3_1</title>
+</head>
+<body>
+<h1>Basic HTML Form Elements</h1>
+
+  <form>
+   <fieldset>
+      <legend>personal Information</legend>
+      <label for="name">Name(text):</label>
+      <input type="text"id="name"required placeholder="" value="">
+   </fieldset>
+     <hr>
+     <fieldset>
+    <legend>Contact&security</legend>
+    <label for="email" >Email:</label>
+    <input type="email"id="email" required placeholder=" ">
+    <br><br>
+    <label for="password">password:</label>
+    <input type="password"id="password" required placeholder="" minlength="8" maxlength="16">
+     </fieldset>
+     <hr>
+   <fieldset>
+    <legend>preferences</legend>
+    <label for="color">favourite color:</label>
+    <input type="color" id="color" required>
+   </fieldset>
+    <hr>
+   <fieldset>
+    <legend>Range&Options</legend>
+    <label for="Volume ">Volume (Rangem 0-100):</label>
+    <input type="range" id="Volume " required minlength="0"maxlength="100" step="1"  value="50" >
+    <br>
+    <p>Select your favourite pet:</p>
+    <input type="radio" name="fav pet"value="dog" id="dog"checked>
+    <label for="dog">dog</label>
+    <br>
+    <input type="radio" name="fav pet"value="cat"id="cat">
+    <label for="cat">cat</label>
+    <br>
+    <input type="radio" name="fav pet"value="bird"id="bird">
+    <label for="bird">bird</label>
+<br><br>
+    <p>Interesets (check all that applly): </p>
+    <input type="checkbox"name="Interesets" value="coding"id="coding">
+    <label for="coding">coding</label>
+    <br>
+    <input type="checkbox"name="Interesets" value="Music"id="Music">
+    <label for="Music">Music</label>
+     <br>
+    <input type="checkbox"name="Interesets" value="Travel"id="Travel">
+    <label for="Travel">Travel</label>
+   </fieldset>
+   <hr>
+   <fieldset>
+    <legend>Selection</legend>
+    <label for="country">Choose a country:</label>
+    <select id="country" required>
+            <option>United Kingdom</option>
+            <option>Egypt</option>
+            <option>france</option>
+    </select>
+   </fieldset>
+   <hr>
+    <fieldset>
+        <legend>Comments</legend>
+        <label for="Textarea">Your comments (Textarea): </label>
+        <br>
+        <textarea cols="50" rows="5" id="Textarea" placeholder="comment"></textarea>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>File Upload</legend>
+        <label for="Upload a File">Upload a File:</label>
+        <input id="File" type="file">
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>search this site</legend>
+        <label for="site">Search  this site : </label>
+        <input id="site" type="text">
+        <br><br>
+        <label for="URL">Your Website URL : </label>
+        <input id="URL" type="text" placeholder="https://example.com">
+        <br>
+    </fieldset>
+    <hr>
+     <fieldset>
+        <legend>Date & Time</legend>
+        <label for="Upload a File">Date:</label>
+        <input id="File" type="date">
+        <br><br>
+        <label for="month">Month:</label>
+        <input id="month" type="month">
+        <br><br>
+        <label for="time">Time:</label>
+        <input id="time" type="time">
+    </fieldset>
+     <hr>
+    <fieldset>
+        <legend>Datalist (suggestions)</legend>
+        <label>choose a Browser (With suggestions): </label>
+        <input list="browsers" name="browser" id="browser" placeholder="">
+        <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Safari">
+        <option value="Edge">
+        <option value="Opera">
+    </fieldset>
+    <hr>
+    <br>
+    <input  type="submit" value="submit form">
+    <input  type="reset" value="Clear form">
+</form>
+
+</body>
+</html>
